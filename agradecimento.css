@@ -1,0 +1,16 @@
+.img-agradecimento {
+    width: 18%;
+    height: 18%;
+    margin-top: 5%;
+}
+
+.thanks h1 {
+    margin: 2rem 0 1rem;
+}
+.thanks h1, .thanks h3 {
+    color: darkred;
+}
+
+.thanks h3::after {
+    content: "\1F604";
+}

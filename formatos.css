@@ -1,37 +1,229 @@
 body {
-    background-color: aqua;
+    font-family: 'Merienda', cursive;
 }
 
-#logo {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 120px;
+.navbg {
+    background-color: darkred;
+    height: 60px;
 }
 
-h2 {
-    margin-top: 250px;
-    margin-bottom: 100px;
-    font-size: 50px;
+.nav-abas {
+    background-color: #EEEEEE;
+    border-radius: 5px;
 }
 
-p {
-    font-size: 25px;
-    font-weight: bold;
+.active {
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 1);
 }
 
-.texto-centralizado {
+main {
+    background: linear-gradient(to bottom, #F6EDA3, #FFFFFF 90%);
+    height: calc(100vh - 100px);
+}
+
+.principal {
     text-align: center;
+}
+
+.principal>p {
+    font-size: 25px;
+    margin: 50px 0;
+}
+
+.logo {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-left: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#img-logo {
+    width: 150px;
+    height: 200px;
 }
 
 footer {
+    background: url(rodape.jpg);
+    padding: 20px 0;
     text-align: center;
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 40px;
-    padding-top: 20px;
-    position: absolute;
     bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+footer>p {
+    display: inline-block;
+    padding: 1em;
+    border-radius: 100px;
+    background: #F6EDA3;
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+@media (max-width: 379px) {
+    main {
+        height: auto;
+    }
+
+    .principal {
+        padding-top: 15%;
+    }
+
+    .bg-botao {
+        background-color: white;
+        border-color: white;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        padding: 0;
+    }
+
+    #img-logo {
+        width: 40%;
+        height: 40%;
+        margin: 10% auto;
+    }
+
+    .logo h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .principal p {
+        font-size: 95%;
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 479px) {
+    main {
+        height: auto;
+    }
+
+    .principal {
+        padding-top: 15%;
+    }
+
+    .bg-botao {
+        background-color: white;
+        border-color: white;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        padding: 0;
+    }
+
+    #img-logo {
+        width: 50%;
+        height: 50%;
+        margin: 10% auto;
+    }
+
+    .logo h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .principal p {
+        font-size: 120%
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    main {
+        height: auto;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .logo {
+        flex-flow: column wrap;
+    }
+
+    .logo h1 {
+        font-size: 150%;
+        margin: 10% auto 0;
+    }
+
+    .principal>p {
+        font-size: 100%;
+        margin-top: 5%;
+    }
+
+    #img-logo {
+        margin-top: 10%;
+        width: 20%
+    }
+
+    .bg-botao {
+        background-color: white;
+        border-color: white;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        height: auto;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .logo {
+        flex-flow: column wrap;
+    }
+
+    .logo h1 {
+        font-size: 150%;
+        margin: 10% auto 0;
+    }
+
+    .principal>p {
+        font-size: 100%;
+        margin-top: 5%;
+    }
+
+    #img-logo {
+        margin-top: 5%;
+        width: 20%;
+        height: 10%;
+    }
+
+    .bg-botao {
+        background-color: white;
+        border-color: white;
+    }
 }

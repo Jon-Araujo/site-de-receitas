@@ -1,4 +1,79 @@
-#pao {
-    width: 250px;
-    height: 200px;
+.row>* {
+    padding: 0 !important;
+}
+
+.card-section {
+    padding: 5rem 0;
+    width: 100%;
+    margin: 0;
+}
+
+.card {
+    width: 22rem;
+}
+
+.borda-card:hover {
+    border: 5px solid darkred;
+    border-radius: 10px;
+}
+
+.card-body li::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.receita-card p,
+li {
+    font-size: 18px;
+}
+
+.img-receitas {
+    min-height: 245px;
+}
+
+main {
+    height: auto
+}
+
+.rodape-receitas {
+    position: static;
+}
+
+@media (max-width: 479px) {
+    .conteudo-principal {
+        height: auto;
+    }
+
+    .card-section {
+        padding-top: 110px !important;
+        margin: 0;
+    }
+
+    .card {
+        margin-bottom: 10%;
+    }
+
+    .borda-card {
+        border: 5px solid darkred;
+        border-radius: 10px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1056px) {
+    .card {
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 5%;
+        background-size: cover;
+    }
+
+    .img-receitas {
+        width: 60%
+    }
+
+    .card-body {
+        background-color: white;
+        border-radius: 0 4px 4px 0;
+    }
 }

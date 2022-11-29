@@ -3,35 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="formatos.css">
     <link rel="stylesheet" href="receitas.css">
-    <title>Receitas</title>
+
+    <title>Receitas - O livro da vovó</title>
+    <link rel="shortcut icon" href="logo-titulo.png">
 </head>
 
 <body>
     <header>
-        MENU
+        <nav class="navbar navbar-expand-lg navbg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-botao" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-abas me-2" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link active nav-abas me-2" href="receitas.html">Receitas</a>
+                        <a class="nav-link nav-abas me-2" href="cadastro.html">Cadastro</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="receitas">
-        <h3>Pãozinho de leite</h3>
-        <img id="pao" src="pão-de-leite.jpg">
-        <ul>
-            <li>1 kg de farinha de trigo</li>
-            <li>1 sachê de Super Fleischmann</li>
-            <li>1 sachê de Super Fleischmann</li>
-            <li>1 colher (sopa) de margarina</li>
-            <li>1 ovo</li>
-            <li>1 colher rasa (sobremesa) de sal</li>
-            <li>2 xícaras (chá) de leite morno</li>
-        </ul>
 
-    </div>
-    <footer>
-        ©OLivroDaVovó 2022
+    <main class="conteudo-principal">
+        <section class="d-flex justify-content-around card-section row">
+            <div class="card borda-card col-12">
+                <img src="arroz.png" class="card-img-top img-receitas"
+                    alt="Vista superior de um bowl de cerâmica com o arroz de couve-flor.">
+                <div class="card-body">
+                    <h5 class="card-title">Arroz de Couve-Flor</h5>
+                    <ul>
+                        <li>Arroz</li>
+                        <li>Couve-Flor</li>
+                        <li>Cebola Média</li>
+                        <li>Azeite</li>
+                    </ul>
+                    <hr>
+                    <p class="card-text">Deixe a couve-flor picada. Adicione os igredientes e refogue bem. Adicione sal,
+                        tampe a panela e deixe cozinhar.
+                    </p>
+                </div>
+            </div>
+            <div class="card borda-card col-12">
+                <img src="bolo.png" class="card-img-top img-receitas"
+                    alt="Bolo de café com uma cafeteira italiana vermelha e uma caneca branca ao fundo.">
+                <div class="card-body">
+                    <h5 class="card-title">Bolo de Café</h5>
+                    <ul>
+                        <li>Farinha de Trigo</li>
+                        <li>Açúcar</li>
+                        <li>Café Coado</li>
+                        <li>Chocolate em Pó</li>
+                        <li>Ovos</li>
+                    </ul>
+                    <hr>
+                    <p class="card-text">Bata o açúcar, as gemas e o café. Adicione farinha e chocolate e mexa bem. Bata
+                        as claras e junte à mistura.</p>
+                </div>
+            </div>
+            <div class="card borda-card col-12">
+                <img src="coxinha.png" class="card-img-top img-receitas"
+                    alt="Uma coxinha de Brigadeiro, partida ao meio, mostrando o morango no interior, envolto em chocolate">
+                <div class="card-body">
+                    <h5 class="card-title">Coxinha de Brigadeiro</h5>
+                    <ul>
+                        <li>Leite Condensado</li>
+                        <li>Chocolate em Pó</li>
+                        <li>Manteiga</li>
+                        <li>Morango</li>
+                        <li>Chocolate Granulado</li>
+                    </ul>
+                    <hr>
+                    <p class="card-text">Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo.
+                        Envolva os morangos e passe no granulado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-receitas">
+        <p>Copyright &copy; 2022 - All Rights Reserved - OLivrodaVovó</p>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
 </html>
