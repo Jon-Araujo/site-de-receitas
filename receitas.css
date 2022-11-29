@@ -69,11 +69,16 @@ main {
     }
 
     .img-receitas {
-        width: 60%
+        width: 60%;
+        height: 100%;
     }
 
     .card-body {
         background-color: white;
         border-radius: 0 4px 4px 0;
+    }
+
+    .borda-card {
+        border: 5px solid darkred;
     }
 }
