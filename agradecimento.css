@@ -7,10 +7,34 @@
 .thanks h1 {
     margin: 2rem 0 1rem;
 }
-.thanks h1, .thanks h3 {
+
+.thanks h1,
+.thanks h3 {
     color: darkred;
 }
 
 .thanks h3::after {
     content: "\1F604";
+}
+
+@media (max-width: 1056px) {
+    footer {
+        position: fixed;
+    }
+
+    .principal {
+        margin-top: 60px;
+        padding: 10% 0
+    }
+}
+
+@media (min-width: 667px) and (max-width: 920px) {
+    footer {
+        position: relative;
+        bottom: 0
+    }
+
+    .principal {
+        padding: 2% 0
+    }
 }

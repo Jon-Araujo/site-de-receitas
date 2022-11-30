@@ -56,9 +56,16 @@ label {
     color: white;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 379px) {
+    footer {
+        position: static;
+    }
+}
+
+@media (max-width: 1056px) {
     .form-main {
         padding-top: 20% !important;
+        height: auto;
     }
 
     .form-titulo {
@@ -95,4 +102,12 @@ label {
     }
 }
 
-@media (min-width: 480px) and (max-width: 1023px) {}
+@media (min-width: 480px) and (max-width: 1056px) {
+    .form-main {
+        padding-top: 10% !important;
+    }
+
+    .form-label {
+        min-width: 80px;
+    }
+}
